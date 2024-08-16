@@ -1,0 +1,223 @@
+*{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+:root{
+    background: radial-gradient(circle at 10% 20%, rgb(55, 209, 255) 0%, rgb(14, 31, 111) 100.2%);
+    --text-color:black;
+    --main-color:black;
+    --other-color:black;
+    --h1-font:4.7rem;
+}
+body{
+     background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    transition: all ease .55s;
+}
+.navlist{
+    display: flex;
+
+}
+.navlist a{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0 30px;
+    transition: all ease .55s;
+}
+.navlist a:hover{
+    color: #800080;
+}
+
+.navlist{
+    color: var(--other-color);
+}
+.logo a{
+    height: 10%;
+    width: 10%;
+}
+
+.h-rihgt{
+    display: flex;
+    align-items: center;
+}
+.h-rihgt a{
+    margin-right: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--other-color);
+    transition: all ease .55s;
+}
+.h-rihgt a:hover{
+    color: aqua;
+}
+#menu-icon{
+    font-size: 37px;
+    color: var(--main-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+section{
+    padding: 0 12%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-ima img{
+    width: 100%;
+    height: auto;
+}
+.home-text span{
+    padding: 11px 18px;
+    background: aqua;
+    border-radius: 10px;
+    color: var(--main-color);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.home-text h1{
+    font-size: var(--h1-font);
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 22px 0;
+}
+.home-text p{
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+.home-text i{
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: #E6E6FA;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    transition: all ease .55s;
+}
+.home-text i:hover{
+    background: #E6E6FA;
+    color: var(--main-color);
+    transform: scale(1.09);
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 22px;
+    color: aqua;
+    background: var(--main-color);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    word-spacing: all ease .55s;
+}
+.btn:hover{
+    border: 1px solid aqua;
+    
+    color: aqua;
+}
+.btn22{
+    display: inline-block;
+    padding: 15px 22px;
+    color: aqua;
+    background: var(--main-color);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    word-spacing: all ease .55s;
+}
+.btn22:hover{
+    border: 1px solid aqua;
+    
+    color: aqua;
+}
+
+@media (max-width: 1820px){
+    header{
+        padding: 15px 7%;
+    }
+    section{
+        padding: 0 7%;
+    }
+}
+@media (max-width: 1610px){
+    :root{
+        --h1-font: 4.2rem;
+    }
+    
+}
+@media(max-width: 1180px){
+    .social{
+        display: none;
+    }
+}
+@media(max-width:78px){
+    header{
+        padding: 13px 5%;
+
+    }
+    section{
+        padding: 60px 5%;
+
+    }
+    #menu-icon{
+        display:block;
+        font-size: 43px;
+    }
+    .navlist{
+       position: absolute;
+       width: 100%;
+       height: 100vh;
+       padding: 70px 50px;
+       top:0;
+       right: 0;
+       bottom: 0; 
+       flex-direction: column;
+       backdrop-filter: blur(32px);
+       transition: all 0.5s ease-in-out;
+    }
+    .navlist a{
+        display: block;
+        padding: 0;
+        margin: 0px 0px 22px 0px;
+        font-size: 2rem;
+    }
+    .navlist.open{
+        left: 0;
+    }
+}
