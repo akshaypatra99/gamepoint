@@ -5,14 +5,14 @@
 
 
 :root{
-    background: radial-gradient(circle at 10% 20%, rgb(55, 209, 255) 0%, rgb(14, 31, 111) 100.2%);
+    
     --text-color:black;
     --main-color:black;
     --other-color:black;
     --h1-font:4.7rem;
 }
 body{
-     radial-gradient(circle at 10% 20%, rgb(55, 209, 255) 0%, rgb(14, 31, 111) 100.2%);
+      background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
     color: var(--text-color);
 }
 header{
